@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { Product, DEFAULT_PRODUCT_IMAGE } from '@/lib/products';
-import { useState } from 'react';
+import Image from "next/image";
+import { Product, DEFAULT_PRODUCT_IMAGE } from "@/lib/products";
+import { useState } from "react";
 
 interface ProductImageProps {
   product: Product;
@@ -32,14 +32,16 @@ export default function ProductImage({ product }: ProductImageProps) {
         src={imageError ? DEFAULT_PRODUCT_IMAGE : product.image}
         alt={product.name}
         fill
-        className={`object-cover transition-all duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'} hover:scale-105`}
+        className={`object-cover transition-all duration-500 ${
+          isLoading ? "opacity-0" : "opacity-100"
+        } hover:scale-105`}
         sizes="(max-width: 1024px) 100vw, 50vw"
         priority
         onError={handleImageError}
         onLoad={handleImageLoad}
       />
       {!isLoading && (
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity duration-300" />
       )}
     </div>
   );

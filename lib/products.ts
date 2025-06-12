@@ -11,6 +11,7 @@ import leashe1 from "@/src/shared/images/leashe1.png";
 import leashe2 from "@/src/shared/images/leashe2.png";
 import leashe3 from "@/src/shared/images/leashe3.png";
 import leashe4 from "@/src/shared/images/leashe4.png";
+import leashe5 from "@/src/shared/images/leashe5.png";
 import { StaticImageData } from "next/image";
 
 export interface Product {
@@ -32,7 +33,7 @@ export const products: Product[] = [
   // Clothes
   {
     id: "1",
-    name: "Cozy Winter Sweater",
+    name: "Cozy Winter Sweater Blue",
     category: "clothes",
     price: 39.99,
     image: clothe1,
@@ -43,44 +44,44 @@ export const products: Product[] = [
   },
   {
     id: "2",
-    name: "Waterproof Raincoat",
+    name: "Cozy Winter Sweater Brown",
     category: "clothes",
     price: 45.99,
     image: clothe2,
     description:
-      "Premium waterproof jacket to keep your dog dry during rainy walks. Features reflective strips for safety and adjustable straps for perfect fit.",
+      "Keep your furry friend warm and stylish with our cozy winter sweater. Made from soft, breathable fabric that provides comfort during cold weather walks.",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
   {
     id: "3",
-    name: "Breathable Summer Vest",
+    name: "Breathable Summer Dress",
     category: "clothes",
     price: 24.99,
     image: clothe12,
     description:
-      "Lightweight, breathable vest perfect for summer adventures. Made from moisture-wicking fabric to keep your dog cool and comfortable.",
+      "Lightweight, breathable dress perfect for summer adventures. Made from moisture-wicking fabric to keep your dog cool and comfortable.",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
   {
     id: "4",
-    name: "Elegant Bow Tie Collar",
+    name: "Breathable Summer T-shirt",
     category: "clothes",
     price: 19.99,
     image: clothe4,
     description:
-      "Sophisticated bow tie collar for special occasions. Adjustable design with premium materials for comfort and style.",
+      "Lightweight, breathable t-shirt perfect for summer adventures. Made from moisture-wicking fabric to keep your dog cool and comfortable.",
     sizes: ["XS", "S", "M", "L", "XL"],
   },
 
   // Toys
   {
     id: "5",
-    name: "Interactive Squeaky Ball",
+    name: "Natural Rope Ball",
     category: "toys",
     price: 12.99,
-    image: toy1,
+    image: toy3,
     description:
-      "Durable rubber ball with engaging squeaker. Perfect for fetch, interactive play, and keeping your dog entertained for hours.",
+      "Durable natural rope ball with engaging squeaker. Perfect for fetch, interactive play, and keeping your dog entertained for hours.",
     sizes: ["Small", "Medium", "Large"],
     featured: true,
   },
@@ -99,19 +100,19 @@ export const products: Product[] = [
     name: "Soft Plush Companion",
     category: "toys",
     price: 18.99,
-    image: toy3,
+    image: toy1,
     description:
       "Ultra-soft plush toy perfect for cuddling and gentle play. Machine washable and made with pet-safe materials.",
     sizes: ["One Size"],
   },
   {
     id: "8",
-    name: "Brain Training Puzzle",
+    name: "Squeaky Bear Companion",
     category: "toys",
     price: 29.99,
     image: toy4,
     description:
-      "Advanced puzzle toy for mental stimulation. Dispenses treats as your dog solves challenges, promoting cognitive development.",
+      "Ultra-soft plush toy with engaging squeaker perfect for cuddling and gentle play. Machine washable and made with pet-safe materials.",
     sizes: ["One Size"],
     featured: true,
   },
@@ -121,7 +122,7 @@ export const products: Product[] = [
     id: "9",
     name: "Premium Leather Leash",
     category: "leashes",
-    price: 34.99,
+    price: 24.99,
     image: leashe1,
     description:
       "Handcrafted leather leash that improves with age. Features comfortable padded handle and solid brass hardware for durability.",
@@ -130,32 +131,42 @@ export const products: Product[] = [
   },
   {
     id: "10",
-    name: "Retractable Freedom Leash",
+    name: "Premium Leather Flower Leash",
     category: "leashes",
     price: 42.99,
     image: leashe2,
     description:
-      "Advanced retractable leash with smooth brake system. Extends up to 16 feet, giving your dog freedom while maintaining control.",
+      "Handcrafted leather flower leash that improves with age. Features comfortable padded handle and solid brass hardware for durability.",
     sizes: ["Small Dogs", "Large Dogs"],
   },
   {
     id: "11",
-    name: "Safety Reflective Leash",
+    name: "Premium Leather Tie Leash",
     category: "leashes",
-    price: 28.99,
+    price: 42.99,
     image: leashe3,
     description:
-      "High-visibility reflective leash for safe evening walks. Features 360-degree reflective stitching and comfortable grip handle.",
+      "Handcrafted leather tie leash that improves with age. Features comfortable padded handle and solid brass hardware for durability.",
     sizes: ["4ft", "6ft"],
   },
   {
     id: "12",
-    name: "Professional Training Leash",
+    name: "Premium Leather Angel Harness",
     category: "leashes",
-    price: 25.99,
+    price: 50.99,
     image: leashe4,
     description:
-      "Extra-long training leash for recall practice and obedience training. Lightweight yet strong, perfect for professional trainers.",
+      "Handcrafted leather angel harness that improves with age. Features comfortable padded handle and solid brass hardware for durability.",
+    sizes: ["15ft", "30ft"],
+  },
+  {
+    id: "13",
+    name: "Premium Leather Strawberry Harness",
+    category: "leashes",
+    price: 50.99,
+    image: leashe5,
+    description:
+      "Handcrafted leather strawberry harness that improves with age. Features comfortable padded handle and solid brass hardware for durability.",
     sizes: ["15ft", "30ft"],
   },
 ];
